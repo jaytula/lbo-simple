@@ -19,6 +19,7 @@
         height: 100vh;
         padding: 4px;
         box-sizing: border-box;
+        font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
       }
       .inner {
         display: flex;
@@ -27,12 +28,23 @@
         height: 100%;
         flex: 1;
         max-width: 640px;
-        background: rgba(255, 255, 255, 0.55);
-        text-align: center;
+        text-align: left;
         border-radius: 10px;
       }
+      h2 {
+        color: black;
+        font-size: 36px;
+        line-height: 150%;
+      }
       label {
+        color: black;
         font-weight: bold;
+      }
+      .logo {
+        text-align: center;
+      }
+      label[for='mce-EMAIL'] {
+        display: block;
       }
     </style>
   </head>
@@ -40,25 +52,15 @@
   <body>
     <div class="container">
       <div class="inner">
-        <div><img src="/lbo-logo.png" /></div>
+        <div class="logo"><img src="/lbo-logo.png" /></div>
 
         <!-- Begin Mailchimp Signup Form -->
-        <link
-          href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css"
-          rel="stylesheet"
-          type="text/css"
-        />
-        <style type="text/css">
-          #mc_embed_signup {
-            font: 14px Helvetica, Arial, sans-serif;
-          }
-          /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-            We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-        </style>
         <div id="mc_embed_signup">
           <div>
-            <h2>Is your family prepared?</h2>
-            <h3>LadyBugOut Coming Soon</h3>
+            <h2>
+              Is your family prepared?<br />
+              LadyBugOut Coming Soon
+            </h2>
           </div>
           <form
             action="https://ladybugout.us19.list-manage.com/subscribe/post?u=7c0b1fc43759ef97b8e05d1cb&amp;id=550e355504"
