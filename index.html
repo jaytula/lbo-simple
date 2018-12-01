@@ -50,6 +50,18 @@
         background-color: rgba(255, 255, 255, 0.15);
         padding: 2px 10px;
         border-radius: 10px;
+        animation-name: logo-animation;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes logo-animation {
+        0% {
+          filter: grayscale();
+        }
+        100% {
+          filter: none;
+        }
       }
       label[for='mce-EMAIL'] {
         display: block;
